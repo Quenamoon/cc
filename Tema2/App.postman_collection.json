@@ -192,7 +192,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"category\": \"Dark Humour\",\r\n    \"text\": \"Dark Humour Joke\"\r\n}",
+							"raw": "",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -279,7 +279,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5000/api/jokes/22cc3039-98d9-4b30-90a7-74618d54b27d",
+							"raw": "http://localhost:5000/api/jokes/f1152c9d-e7d5-4052-9479-47b29133d5de",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -288,7 +288,7 @@
 							"path": [
 								"api",
 								"jokes",
-								"22cc3039-98d9-4b30-90a7-74618d54b27d"
+								"f1152c9d-e7d5-4052-9479-47b29133d5de"
 							]
 						}
 					},
@@ -300,7 +300,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000/api/jokes/22cc3039-98d9-4b30-90a7-74618d54b27d",
+							"raw": "http://localhost:5000/api/jokes/f1152c9d-e7d5-4052-9479-47b29133d5de",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -309,7 +309,7 @@
 							"path": [
 								"api",
 								"jokes",
-								"22cc3039-98d9-4b30-90a7-74618d54b27d"
+								"f1152c9d-e7d5-4052-9479-47b29133d5de"
 							]
 						}
 					},
