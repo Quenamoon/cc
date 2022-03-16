@@ -49,6 +49,11 @@ async function addJoke(req, res) {
             category,
             text
         }
+
+        if(!category || !text) {
+            res.writeHead(400, {'Content-Type': 'application/json'})
+            return res.end(JSON.stringify({message: 'Invalid Input'}))
+        }
         
         const newJoke = await Joke.create(joke)
         res.writeHead(201, {'Content-Type': 'application/json', 'Location': `/api/jokes/${newJoke.id}`})

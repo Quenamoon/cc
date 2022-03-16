@@ -56,6 +56,11 @@ async function addFlower(req, res) {
                 origin,
                 description,
             }
+
+            if(!name || !origin || !description) {
+                res.writeHead(400, {'Content-Type': 'application/json'})
+                return res.end(JSON.stringify({message: 'Invalid Input'}))
+            }
             
             const newFlower = await Flower.create(flower)
     
