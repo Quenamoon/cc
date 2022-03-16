@@ -1,0 +1,321 @@
+{
+	"info": {
+		"_postman_id": "872cf2d8-6199-4fa0-addb-4a3f9369a64a",
+		"name": "App",
+		"description": "Collection of flowers REST Api.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "flowers",
+			"item": [
+				{
+					"name": "Get Flowers List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/flowers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"flowers"
+							]
+						},
+						"description": "Returns a JSON list of flowers that are in the data set and their content."
+					},
+					"response": []
+				},
+				{
+					"name": "Get Flower By Name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/flowers/Iris",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"flowers",
+								"Iris"
+							]
+						},
+						"description": "Returns the content of a flower entry in the flowers dataset if the flower is found by the name. The name is unique."
+					},
+					"response": []
+				},
+				{
+					"name": "Add Flower",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Petunia\",\r\n    \"origin\": \"Tupi-Guarani language\",\r\n    \"description\": \"A tender perrennial, most of the varieties seen in gardens are hybrids (Petunia × atkinsiana, also known as Petunia × hybrida).\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/flowers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"flowers"
+							]
+						},
+						"description": "Create a flower entry in the dataset.\n\nThe data sent must be a JSON and contain the following:\n\n`{ \"name\" : , \"origin\" : , \"description\": }`"
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Flower",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"origin\": \"epithet from the French, which took the word petun\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/flowers/Petunia",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"flowers",
+								"Petunia"
+							]
+						},
+						"description": "Edits the information of a flower entry in the flowers data set. You need to provide the name of the flower in the route."
+					},
+					"response": []
+				},
+				{
+					"name": "Edit All Flowers Route",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/flowers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"flowers"
+							]
+						},
+						"description": "`It only returns a 405 Method Not Allowed code.`"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Flower",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/flowers/Petunia",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"flowers",
+								"Petunia"
+							]
+						},
+						"description": "Deletes a flower from the flowers data set. The name of the flower must be provided in the route."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete All Flowers Route",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/flowers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"flowers"
+							]
+						},
+						"description": "`It only returns a 405 Method Not Allowed code.`"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "jokes",
+			"item": [
+				{
+					"name": "Get All Jokes",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"category\": \"Dark Humour\",\r\n    \"text\": \"Dark Humour Joke\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/jokes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"jokes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Joke By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/jokes/c57c2901-046f-44cd-b8a8-673151219103",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"jokes",
+								"c57c2901-046f-44cd-b8a8-673151219103"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Joke to DataSet",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"category\": \"OC\",\r\n    \"text\": \"This is my own creation.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/jokes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"jokes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Joke By Id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"text\": \"This is my own creation. Period.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/jokes/22cc3039-98d9-4b30-90a7-74618d54b27d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"jokes",
+								"22cc3039-98d9-4b30-90a7-74618d54b27d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Joke By ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/jokes/22cc3039-98d9-4b30-90a7-74618d54b27d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"jokes",
+								"22cc3039-98d9-4b30-90a7-74618d54b27d"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

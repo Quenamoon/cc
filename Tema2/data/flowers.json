@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Iris",
+        "origin": "Greek",
+        "description": "Iris is directly derived from the Greek word iris, meaning “rainbow.” In Greek mythology, Iris was the goddess of the rainbow, a messenger for Zeus and Hera who rode the rainbow as a multicolored bridge from heaven to earth. In ancient times, the Iris was considered a symbol of power and majesty, the three petal segments representing faith, wisdom and valor. This colorful image led to the naming of the flower and to the colored part of the eye."
+    },
+    {
+        "name": "Ivy",
+        "origin": "Botanical name",
+        "description": "Ivy is derived from the name of the ivy plant, which got its name from the Old English word ifig. Ancient Greeks presented an ivy wreath to newlyweds as a symbol of fidelity. In the language of flowers, Ivy signifies faithfulness."
+    },
+    {
+        "name": "Violet",
+        "origin": "English from Latin",
+        "description": "Violet is soft and sweet but far from shrinking. The Victorian Violet, one of the prettiest of the color and flower names, was chosen by high-profile parents Jennifer Garner and Ben Affleck, definitely a factor in its rapid climb to popularity. Violet cracked into the Top 50 for the first time ever in 2015."
+    },
+    {
+        "name": "Daphne",
+        "origin": "Greek origin",
+        "description": "In Greek mythology, Daphne was the nymph daughter of Peneus, a river god. Peneus saved Daphne from Apollo’s romantic obsessions by transforming her into a laurel tree. It is from this myth that the plant genus daphne, which contains the laurel species, gets its name."
+    },
+    {
+        "name": "Petunia",
+        "origin": "Tupi-Guarani language",
+        "description": "A tender perrennial, most of the varieties seen in gardens are hybrids (Petunia × atkinsiana, also known as Petunia × hybrida)."
+    }
+]
